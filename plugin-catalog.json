@@ -6,9 +6,6 @@
     "configurations" : [
         {
             "description" : "Basic GitHub API optimizations using a cache",
-            "prerequisites": {
-                "productVersion": "[2.138]"
-            },
             "includePlugins" : {
                 "github-branch-source": {
                     "version" : "2.4.0"
