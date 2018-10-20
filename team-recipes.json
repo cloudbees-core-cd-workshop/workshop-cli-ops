@@ -1,0 +1,67 @@
+{
+    "version": "1",
+    "data": [
+        {
+            "name": "workshop",
+            "displayName": "Workshop Default",
+            "description": "The minimal setup for the workshop.",
+            "plugins": [
+                "bluesteel-master",
+                "cloudbees-folders-plus",
+                "cloudbees-jsync-archiver",
+                "cloudbees-monitoring",
+                "cloudbees-nodes-plus",
+                "cloudbees-support",
+                "cloudbees-workflow-template",
+                "credentials-binding",
+                "git",
+                "git-client",
+                "github-branch-source",
+                "mailer",
+                "operations-center-cloud",
+                "pipeline-model-definition",
+                "wikitext",
+                "workflow-aggregator",
+                "workflow-cps-checkpoint"
+            ],
+            "default": true
+        },
+        {
+            "name": "java-web",
+            "displayName": "Java & Web Development",
+            "description": "The essential tools to build, release and deploy Java Web applications including integration with Maven, Gradle and Node JS.",
+            "plugins": [
+                "bluesteel-master",
+                "cloudbees-folders-plus",
+                "cloudbees-jsync-archiver",
+                "cloudbees-monitoring",
+                "cloudbees-nodes-plus",
+                "cloudbees-support",
+                "cloudbees-workflow-template",
+                "credentials-binding",
+                "git",
+                "git-client",
+                "github-branch-source",
+                "mailer",
+                "operations-center-cloud",
+                "pipeline-model-definition",
+                "wikitext",
+                "workflow-aggregator",
+                "workflow-cps-checkpoint",
+                "config-file-provider",
+                "cloudbees-aws-cli",
+                "cloudbees-cloudfoundry-cli",
+                "findbugs",
+                "gradle",
+                "jira",
+                "junit",
+                "nodejs",
+                "openshift-cli",
+                "pipeline-maven",
+                "tasks",
+                "warnings"
+            ],
+            "default": false
+        }
+    ]
+}
