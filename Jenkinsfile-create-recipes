@@ -1,0 +1,13 @@
+node('master') {
+  echo "preparing to create team recipes"
+  checkout scm
+  echo "preparing Jenkins CLI"
+  sh 'curl -O http://cjoc/cjoc/jnlpJars/jenkins-cli.jar'
+  withCredentials([string(credentialsId: 'beedemo-admin-jenkins-api-key', variable: 'API_KEY')]) {
+    sh """
+      alias cli='java -jar jenkins-cli.jar -s \'http://cjoc/cjoc/\' -auth admin:$API_KEY'
+      cli team-creation-recipes --put < team-recipes.json
+      cli team-creation-recipes
+    """
+  }
+}
