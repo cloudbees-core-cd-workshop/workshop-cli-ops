@@ -16,7 +16,6 @@
                 "credentials-binding",
                 "git",
                 "git-client",
-                "github-branch-source",
                 "mailer",
                 "operations-center-cloud",
                 "pipeline-model-definition",
